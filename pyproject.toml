@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "passd"
+version = "0.1.0"
+description = ""
+authors = ["Max Campbell <me@0m.ax>"]
+
+[tool.poetry.scripts]
+passd = "passd.cli:run"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+dmenu = "^0.2.1"
+pypass = { git = "https://github.com/aviau/python-pass.git" }
+pyperclip = "^1.8.2"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
